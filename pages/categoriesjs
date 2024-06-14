@@ -1,0 +1,39 @@
+// pages/categories.js
+import Link from 'next/link';
+
+export default function Categories() {
+  return (
+    <div className="bg-white min-h-screen p-4">
+      <nav className="p-4 bg-gray-800">
+        <div className="max-w-3xl mx-auto">
+          <Link href="/" className="text-white font-bold text-2xl">My Blog
+          </Link>
+          <Link href="/categories" className="ml-4 text-gray-300 text-lg">Categories
+          </Link>
+        </div>
+      </nav>
+      <div className="max-w-3xl mx-auto">
+        <h1 className="text-4xl font-bold my-8">Categories</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {/* Detailed information about each grid item */}
+          <div className="bg-white p-4 rounded-lg">
+            <h2 className="text-xl font-semibold">Grid Item 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Additional details about Grid Item 1.</p>
+          </div>
+          <div className="bg-white p-4 rounded-lg">
+            <h2 className="text-xl font-semibold">Grid Item 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Additional details about Grid Item 2.</p>
+          </div>
+          <div className="bg-white p-4 rounded-lg">
+            <h2 className="text-xl font-semibold">Grid Item 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Additional details about Grid Item 3.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
